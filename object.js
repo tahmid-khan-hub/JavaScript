@@ -22,27 +22,43 @@ const subject = {
         mark:100
     }
 }
-console.log(subject);
+// console.log(subject);
 
 // if we want to access a single data
 // we can use . 
-console.log(subject.teacher);
+// console.log(subject.teacher);
 
 //  but if we got very complicated property name like space ->
 // we can use []
-console.log(subject['fav chapters']);
+// console.log(subject['fav chapters']);
 
 
 // **** if we want to change our property value ->
 bottle.price = 25;
 subject['fav chapters'] = ['5','6','9'];
 
-console.log(bottle);
+// console.log(bottle);
 
-console.log(subject);
+// console.log(subject);
 
 // also
 const propName = 'brand';
 bottle[propName] = 'Pran';
-console.log(bottle)
+// console.log(bottle)
+
+
+// we can also declare func in obj ->
+const nayok = {
+    name:'Shakib Khan',
+    address:'Dhaka',
+    isSingle:false,
+    movies: [{name:'no. 1', year: 2015}, {name:'King Khan', year: 2018}],
+    act: function(){
+        console.log('Shakib Khan is a BD superstar');
+
+    },
+}
+// nayok.act();
+
+nayok.act();
 
